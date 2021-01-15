@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'op2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'herokuconnect',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'heroku_cbb405256263d25',
+        'USER': 'bf1be18d649918',
+        'PASSWORD': 'ccea2d95',
+        'HOST': 'eu-cdbr-west-03.cleardb.net',
         'POST': '3306',
     }
 }
