@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regisztráció</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+<nav>
+    <a href="index">Kezdőlap</a>
+    <a href="login">Bejelentkezés</a>
+</nav>
+<form class="form" action="register" method="post">
+    {% csrf_token %}
+    <input type="text" name="first_name" placeholder="Vezetéknév"><br>
+    <input type="text" name="last_name" placeholder="Keresztnév"><br>
+    <input type="text" name="username" placeholder="Felhasználónév"><br>
+    <input type="text" name="email" placeholder="Email"><br>
+    <input type="password" name="password1" placeholder="Jelszó"><br>
+    <input type="password" name="password2" placeholder="Jelszó megerősítő"><br>
+    <input type="submit" name="submit" value="Regisztráció"><br>
+</form>
+    <div class="errormsg">
+    {% for message in messages %}
+        <h3> {{ message }} </h3>
+    {% endfor %}
+    </div>
+{% endblock %}
+</body>
+</html>

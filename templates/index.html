@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beadando</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+   <nav>
+       <a href="index">Kezdőlap</a>
+
+       {% if user.is_authenticated %}
+       <a href="logout">Kijelentkezés</a>
+       {% else %}
+       <a href="register">Regisztráció</a>
+       <a href="login">Bejelentkezés</a>
+       {% endif %}
+   </nav>
+    <main>
+    {% if user.is_authenticated %}
+    Üdvözöljük {{ user.username }}
+    {% else %}
+    Üdvözöljük az oldalon
+    {% endif %}
+    </main>
+{% endblock %}
+</body>
+</html>

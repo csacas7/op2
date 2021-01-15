@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+}
+
+header{
+    padding-top: 20px;
+	text-align: center;
+	left: 0;
+	background: #2F323A;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+}
+
+header h3{
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+header span{
+	color: #1DC4E7;
+}
+
+nav {
+    position: fixed;
+	background: #2F323A;
+	margin-top: 100px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+    z-index: 1;
+}
+
+nav a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+nav a:hover{
+	background: #19B3D3;
+}
+
+main {
+    position: relative;
+    padding-top: 110px;
+    text-align: center;
+    font-size: 2em;
+    z-index: 0;
+}
+
+.form {
+    position: relative;
+    padding-top: 120px;
+    text-align: center;
+    display: block;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.form input{
+    text-align: center;
+    border-radius: 20px;
+    padding: 12px 20px;
+    outline: none;
+}
+
+.form input[type=submit]{
+    cursor: pointer;
+}
+
+.errormsg{
+    text-align: center;
+}
+
+footer {
+	box-sizing: border-box;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	align-items: center;
+	text-align: center;
+	background: #2F323A;
+	color: #fff;
+	bottom: 0;
+}
+
+footer h5 {
+	padding-top: 20px;
+	font-size: 15px;
+}
