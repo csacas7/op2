@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'op2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_cbb405256263d25',
-        'USER': 'bf1be18d649918',
-        'PASSWORD': 'ccea2d95',
-        'HOST': 'eu-cdbr-west-03.cleardb.net',
-        'POST': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd44pb4a1lvq06v',
+        'USER': 'vdcogohzrsuozr',
+        'PASSWORD': '9d141818c8b5d90f37ee422dfd5ef7906b8e88b48308f31cacfe9194dfe2878e',
+        'HOST': 'ec2-99-81-238-134.eu-west-1.compute.amazonaws.com',
+        'POST': '5432',
     }
 }
 
